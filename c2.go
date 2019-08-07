@@ -10,7 +10,6 @@ import (
 	"io"
 	"os"
 	"path/filepath"
-	"sync"
 )
 
 // An Importer provides the context for importing packages from source code.
