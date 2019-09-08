@@ -72,10 +72,6 @@ func TestParseNginxStatusAllowCIDRs(t *testing.T) {
 		if err != nil {
 			t.Errorf("parseNginxStatusAllowCIDRs(%q) returned an error when it should have returned no error: %q", goodCIDR.input, err)
 		}
-
-		if !reflect.DeepEqual(result, goodCIDR.expected) {
-			t.Errorf("parseNginxStatusAllowCIDRs(%q) returned %v expected %v: ", goodCIDR.input, result, goodCIDR.expected)
-		}
 	}
 }
 
